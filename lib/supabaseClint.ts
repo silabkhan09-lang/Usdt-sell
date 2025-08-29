@@ -1,0 +1,10 @@
+// lib/supabaseClient.js
+import { createClient } from '@supabase/supabase-ts'
+
+// Your Supabase project URL
+const supabaseUrl = 'https://oerskuodrrupxedfyrbb.supabase.co'
+
+// Your anon public key (works on frontend/mobile)
+const supabaseAnonKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9lcnNrdW9kcnJ1cHhlZGZ5cmJiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTYxMTkwODYsImV4cCI6MjA3MTY5NTA4Nn0.W65IsQ2QdNChLh9m7rJOmuR-5TTus6mflxcrxdupfFE'
+
+export const supabase = createClient(supabaseUrl, supabaseAnonKey)
